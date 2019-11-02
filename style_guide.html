@@ -1,0 +1,296 @@
+<!--////////////////////////// STYLE GUIDE //////////////////////////////////-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- charset used for character encoding -->
+    <meta charset="utf-8">
+    <!-- name, content, and initial-scale used for mobile view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zoe - Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- These two lines import the fonts from google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="title">
+        <a href="index.html"><h1>Zoe</h1></a>
+      </div>
+
+      <!-- This is the navigation for the style sheet -->
+      <ul class="navigation">
+        <li><a class="navigation-item" href="index.html">Home</a></li>
+
+        <li><a class="navigation-item" href="#branding">Branding</a></li>
+        <li><a class="navigation-item" href="#interactive_elements">Interactive Elements</a><li>
+        <li><a class="navigation-item" href="#text_elements">Text Elements</a></li>
+        <li><a class="navigation-item" href="#combined_elements">Combined Elements</a></li>
+        <li><a class="navigation-item" href="#citations">Citations</a></li>
+
+      </ul>
+    </header>
+
+    <!-- BRANDING -->
+    <section id="branding">
+      <h2>Branding</h2>
+
+      <section class="element">
+
+        <h3>Colour Palette</h3>
+        <div id="main-dark">
+          <img class="color-img" src="img/dark-blue.png"  title="Dark Blue" alt="A set of HTML brackets that are dark blue">
+          <p><strong>Dark Blue | #023777</strong><br>Used as an accent color.</p>
+        </div>
+        <div id="main-colour">
+          <img class="color-img" src="img/light-blue.png" title="Light Blue" alt="A set of HTML brackets that are light blue">
+          <p><strong>Light Blue | #45ADA8</strong><br>Used as a main titles color.</p>
+        </div>
+        <div id="highlight-colour">
+          <img class="color-img" src="img/red.png" title="Red" alt="A set of HTML brackets that are bright red">
+          <p><strong>Red | #FE4365</strong><br>Used as a highlight colour.</p>
+        </div>
+        <div id="second-colour">
+          <img class="color-img" src="img/light-green.png" title="Light Green" alt="A set of HTML brackets that are bright light green">
+          <p><strong>Light Green | #9DE0AD</strong><br>Used as a secondary title color.</p>
+        </div>
+        <div id="second-dark">
+          <img class="color-img" src="img/grey.png" title="DeluxedDice Logo" alt="A D20 dice that is grey on a whtie background">
+          <p><strong>Grey | #7F7F7F</strong><br>Used as a body copy color.</p>
+        </div>
+
+        <h3>Fonts</h3>
+        <h2 class="main">Header - Jura</h2>
+        <h2 class="highlight">Header - Jura</h2>
+        <h2 class="second">Header - Jura</h2>
+        <p class="body">Roboto is the font used for body copy.</p>
+
+      </section>
+    </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt; This is an &lt;a class="in-text-link" href="#"&gt;in-text link&lt;/a&gt; example &lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p> This is an <a class="in-text-link" href="https://www.w3schools.com/html/html_links.asp">in-text link</a> example.</p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Button</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Nav Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS selector:</h4>
+        <p>.button-submit</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-submit" href="#">Submit</a>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.input-label, .labelled-input</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label class="input-label" for="form-name"&gt;Name:&lt;/label&gt;</code>
+        <code>&lt;input class="labelled-input" type="text" id="form-name" placeholder="Jane Doe"&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <label class="input-label" for="form-name">Name:</label>
+        <input class="labelled-input" type="text" id="form-name" placeholder="Jane Doe">
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>.labelled-radio, .radio-label</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;class="labelled-radio" input type="radio" id="option1" name="example" value="yes" checked&gt;</code>
+        <code>&lt;label for="option1"&gt;Yes&lt;/label&gt;</code>
+
+        <code>&lt;class="labelled-radio" input type="radio" id="option2" name="example" value="no"&gt;</code>
+        <code>&lt;label for="option2"&gt;No&lt;/label&gt;</code>
+
+        <code>&lt;class="labelled-radio" input type="radio" id="option3" name="example" value="maybe"&gt;</code>
+        <code>&lt;label for="option3"&gt;Maybe&lt;/label&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>Select an option:</p>
+
+        <input class="labelled-radio" type='radio' id="option1" name="example" value="yes"
+         checked>
+        <label class="radio-label" for="option1">Yes</label><br>
+
+        <input class="labelled-radio" type='radio' id="option2" name="example" value="no">
+        <label class="radio-label" for="option2">No</label><br>
+
+        <input class="labelled-radio" type='radio' id="option3" name="example" value="maybe">
+        <label class="radio-label" for="option3">Maybe</label><br>
+        <!-- reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>.img-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a class="img-link" href="https://www.wizards.com/d20modern/d20mdice/dice.htm"&gt;</code>
+        <code>&lt;img src="img/dice.jpg" title="DND Dice" alt="DND dice that are light green and semi-transparent"&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="img-link" href="https://www.wizards.com/d20modern/d20mdice/dice.htm">
+        <img src="img/spearmint_dice.jpg" title="DND Dice" alt="DND dice that are mint green and shiny"></a>
+
+        <!-- reference: https://www.rapidtables.com/web/html/link/html-image-link.html -->
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h4>CSS selector:</h4>
+        <p>.heading</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h2 class="heading"&gt;Heading 2&lt;/h2&gt;</code>
+        <code>&lt;h3 class="heading"&gt;Heading 3&lt;/h3&gt;</code>
+        <code>&lt;h4 class="heading"&gt;Heading 4&lt;/h4&gt;</code>
+        <code>&lt;h5 class="heading"&gt;Heading 5&lt;/h5&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <h2 class="heading">Heading 2</h2>
+        <h3 class="heading">Heading 3</h3>
+        <h4 class="heading">Heading 4</h4>
+        <h5 class="heading">Heading 5</h5>
+
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Lorem ipsum...&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est libero, tincidunt non cursus eget, imperdiet sit amet ante. Aliquam et sodales magna. Nam ac vehicula arcu, maximus gravida ex. Mauris aliquet eget risus a molestie. Suspendisse posuere vehicula velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare justo lectus, ac tincidunt metus porttitor vel.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS selector:</h4>
+        <p>ol, li</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;</code>
+        <code>&lt;li&gt;Item one&lt;/p&gt;</code>
+        <code>&lt;li&gt;Item two&lt;/p&gt;</code>
+        <code>&lt;li&gt;Item three&lt;/p&gt;</code>
+        <code>&lt;/ol&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Item one</li>
+          <li>Item two</li>
+          <li>Item three</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <h4>CSS selector:</h4>
+        <p>.navigation .navigation-item</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ul class="navigation"&gt;</code>
+        <code>&lt;li&gt;&lt;a class="navigation-item" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li&gt;&lt;a class="navigation-item" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li&gt;&lt;a class="navigation-item" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+        <ul class="navigation">
+          <li><a class="navigation-item" href="#">Home</a></li>
+          <li><a class="navigation-item" href="#">About</a><li>
+          <li><a class="navigation-item" href="#">Contact</a></li>
+        </ul>
+
+        <!-- while a ul may not be ideal semantially, it allows for the type of styling I wished to achieve -->
+
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="citations">
+      <h2>Citations</h2>
+      <li>Johnson, Daniel. Designer. <strong> Jura [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Jura">https://fonts.google.com/specimen/Jura</a></li>
+      <li>Robertson, Christian. Designer. <strong> Roboto [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Roboto">https://fonts.google.com/specimen/Roboto</a></li>
+    </section>
+
+  </body>
+</html>
