@@ -1,0 +1,326 @@
+/* HEADER */
+
+.title {
+  padding-left: 2em;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+
+/*------------------------ DEFAULT STYLING FOR PAGE --------------------------*/
+
+body {
+  margin:0;
+  padding:0;
+  background-color: white;
+  color: #7F7F7F; /* Grey */
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  padding: 1em;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: dotted;
+  border-top-color: #7F7F7F; /* Grey */
+}
+
+.heading {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-style:normal;
+}
+
+h2 {
+  margin-top: 6rem;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+  width: 60%;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/*------------------------------- BRANDING -----------------------------------*/
+
+#main-colour{
+  color: #7F7F7F; /* Grey */
+  padding: 2rem;
+  display: flex;
+}
+
+#main-dark{
+  color: #7F7F7F; /* Grey */
+  padding: 2rem;
+  display: flex;
+}
+
+#highlight-colour{
+  color: #7F7F7F; /* Grey */
+  padding: 2rem;
+  display: flex;
+}
+
+#second-colour{
+  color: #7F7F7F; /* Grey */
+  padding: 2rem;
+  display: flex;
+}
+
+#second-dark{
+  color: #7F7F7F; /* Grey */
+  padding: 2rem;
+  display: flex;
+}
+
+.color-img {
+  width: 15%;
+  height: 15%;
+  margin-right: 1em;
+}
+
+
+/*----------------------------- FONT STYLING ---------------------------------*/
+
+
+
+.main {
+  color: #fe4365; /* Red */
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+  font-family: 'Jura', sans-serif;
+}
+
+.highlight {
+  color:#45ADA8; /* Light Blue*/
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+  font-family: 'Jura', sans-serif;
+}
+
+.second {
+  color: #9de0ad; /* Light Green */
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+  font-family: 'Jura', sans-serif;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  color: #7F7F7F; /* Grey */
+}
+
+
+/* ------------------------- INTERACTIVE ELEMENTS ----------------------------*/
+
+/*in-text link*/
+.in-text-link {
+  color: #45ADA8; /* Light Blue*/
+  text-decoration: none;
+}
+
+.in-text-link:hover, .in-text-link:focus, .in-text-link:active {
+  color: #023777; /* Dark Blue */
+}
+
+/*navigation button*/
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: #45ADA8; /* Light Blue*/
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #023777; /* Dark Blue */
+}
+
+/*submit button*/
+.button-submit {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: #fe4365; /* Red */
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-submit:hover, .button-submit:focus {
+  background-color: #8c2437; /* Dark Red */
+}
+
+/*text input field with label*/
+.labelled-input {
+  font: 16px 'Roboto', sans-serif;
+  color:  #7F7F7F; /* Grey */
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid #45ADA8; /* Light Blue*/
+  background-color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9de0ad; /* Light Green */
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #9de0ad; /* Light Green */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #9de0ad; /* Light Green */
+}
+
+/* reference: https://codepen.io/Takumari85/pen/RaYwpJ */
+
+.labelled-input:focus, .labelled-input:active {
+  outline: none;
+  background-color: #EEE;
+  box-shadow: 0 0 3px #023777; /* Dark Blue */;
+}
+
+.labelled-input:hover {
+  background-color: #EEE;
+}
+
+.input-label {
+  color: #023777; /* Dark Blue */
+  padding-right: 0.5em;
+}
+
+/*radio button with label*/
+.radio-label {
+  color: #023777; /* Dark Blue */
+}
+
+/* the css for the radio buttons was taken from a tutorial (link below)*/
+
+input[type='radio']:after {
+      /*create a custom circle for the radio button*/
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+
+      /*set the default colour of the circle*/
+      background-color: #d1d3d1; /* Light Grey */
+
+      /*cover up default radio buttons*/
+      content: '';
+      display: inline-block;
+
+      /*adding a white border makes the circle appear to have no border*/
+      border: 2px solid white;
+  }
+
+  input[type='radio']:checked:after {
+      /*create a custom circle for the radio button*/
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+
+      /*set the colour of the circle when it is checked*/
+      background-color:  #45ADA8; /* Light Blue*/
+
+      /*cover up default radio buttons*/
+      content: '';
+      display: inline-block;
+
+      /*adding a white border makes the circle appear to have no border*/
+      border: 2px solid white;
+  }
+
+  /* reference: https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons */
+
+.radio-label:hover, .radio-label:focus {
+  text-decoration: underline;
+}
+
+/*image as link*/
+.img-link {
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+
+.img-link:hover, .img-link:focus {
+  opacity:0.5;
+}
+
+/* resource: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+
+/*image as link*/
+.img-link img {
+  width: 40%;
+}
+
+/*headings*/
+h1, h2 {
+  color: #fe4365; /* Red */
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
+}
+
+/* -------------------------- COMBINED ELEMENTS ------------------------------*/
+
+/*main navigation*/
+.navigation {
+  padding: 0.5em;
+  background-color: #45ADA8; /* Light Blue*/
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation-item {
+  padding: 0.5em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.navigation-item:hover {
+    background-color: #023777; /* Dark Blue */
+}
+
+/*reference: https://www.w3schools.com/css/css_navbar.asp */
