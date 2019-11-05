@@ -1,0 +1,21 @@
+/* STYLING FOR THE ABOUT PAGE */
+
+.about img {
+  float: right;
+  padding-right: 5em;
+}
+
+.about h2, ul, p {
+  display: block;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.about {
+  padding: 0 1em 1em 1em;
+  height: 70%;
+}
+
+h2 {
+  margin-top: 1em;
+}

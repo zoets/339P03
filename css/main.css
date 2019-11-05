@@ -1,13 +1,40 @@
-/* HEADER */
+html{
+  height: 100%;
+  /* background: blue; */
+}
+
+body {
+  height: 100%;
+
+  /*fixing a weird issue where the body is shifted down 21 px from the top of the page */
+  position: relative;
+  top: -21px;
+  overflow: hidden;
+}
+
+/* ----------------------------- HEADER -----------------------------*/
 
 .title {
-  padding-left: 2em;
+  padding: 1em 0 .3em 2em;
+  height: 15%;
 }
 
 .title a {
   text-decoration: none;
 }
 
+/* ----------------------------- FOOTER -----------------------------*/
+
+footer {
+  background-color: #45ADA8; /* Light Blue*/
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link {
+  margin: 0 .5em 0 .5em;
+}
 
 /*------------------------ DEFAULT STYLING FOR PAGE --------------------------*/
 
@@ -100,8 +127,6 @@ code {
 
 
 /*----------------------------- FONT STYLING ---------------------------------*/
-
-
 
 .main {
   color: #fe4365; /* Red */
