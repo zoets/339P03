@@ -1,13 +1,30 @@
-/* HEADER */
+body {
+  overflow: auto;
+}
+
+/* ----------------------------- HEADER -----------------------------*/
 
 .title {
-  padding-left: 2em;
+  padding: 0 0 0 1em;
 }
 
 .title a {
   text-decoration: none;
 }
 
+/* ----------------------------- FOOTER -----------------------------*/
+
+footer {
+  background-color: #45ADA8; /* Light Blue*/
+  height: 5em;
+  display: flex;
+  align-items: center;
+  clear: both;
+}
+
+.footer-link {
+  margin: 0 .5em 0 .5em;
+}
 
 /*------------------------ DEFAULT STYLING FOR PAGE --------------------------*/
 
@@ -100,8 +117,6 @@ code {
 
 
 /*----------------------------- FONT STYLING ---------------------------------*/
-
-
 
 .main {
   color: #fe4365; /* Red */
@@ -279,12 +294,12 @@ input[type='radio']:after {
   opacity:0.5;
 }
 
-/* resource: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
-
-/*image as link*/
+/*
 .img-link img {
-  width: 40%;
-}
+  width: 50%;
+} */
+
+/* resource: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 
 /*headings*/
 h1, h2 {

@@ -1,0 +1,15 @@
+/* STYLING FOR THE HOME PAGE */
+
+.home img {
+  float: left;
+  margin: 2em 0 2em 2em;
+  clear: both;
+  width: 25.65%;
+}
+
+
+.home h2 {
+  display: inline-block;
+  margin: 2em;
+  font-size: 3em;
+}
