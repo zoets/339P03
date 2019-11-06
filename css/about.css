@@ -1,21 +1,34 @@
 /* STYLING FOR THE ABOUT PAGE */
 
-.about img {
+img {
   float: right;
   padding-right: 5em;
+  padding-bottom: 2em;
+  width: 25.6%;
 }
 
 .about h2, ul, p {
   display: block;
-  margin-right: 0;
-  padding-right: 0;
+  padding-left: 2em;
+}
+
+p {
+  padding-left: 3em;
+}
+
+li {
+  list-style: none;
+  padding-left: 2em;
 }
 
 .about {
   padding: 0 1em 1em 1em;
-  height: 70%;
+}
+
+p {
+  width: 50%;
 }
 
 h2 {
-  margin-top: 1em;
+  margin-top: 2em;
 }

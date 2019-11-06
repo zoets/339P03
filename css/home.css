@@ -1,13 +1,10 @@
 /* STYLING FOR THE HOME PAGE */
 
-
-.home {
-  height: 70%;
-}
-
 .home img {
   float: left;
   margin: 2em 0 2em 2em;
+  clear: both;
+  width: 25.65%;
 }
 
 

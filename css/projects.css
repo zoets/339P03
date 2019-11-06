@@ -1,0 +1,21 @@
+/* STYLING FOR THE PROJECTS PAGE */
+
+.img-link {
+  width: 100%;
+}
+
+.img-link {
+  width: 90%;
+  padding: 2em;
+}
+
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.description p {
+  padding: 2em;
+}

@@ -1,22 +1,11 @@
-html{
-  height: 100%;
-  /* background: blue; */
-}
-
 body {
-  height: 100%;
-
-  /*fixing a weird issue where the body is shifted down 21 px from the top of the page */
-  position: relative;
-  top: -21px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* ----------------------------- HEADER -----------------------------*/
 
 .title {
-  padding: 1em 0 .3em 2em;
-  height: 15%;
+  padding: 0 0 0 1em;
 }
 
 .title a {
@@ -27,9 +16,10 @@ body {
 
 footer {
   background-color: #45ADA8; /* Light Blue*/
-  height: 15%;
+  height: 5em;
   display: flex;
   align-items: center;
+  clear: both;
 }
 
 .footer-link {
@@ -304,12 +294,12 @@ input[type='radio']:after {
   opacity:0.5;
 }
 
-/* resource: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
-
-/*image as link*/
+/*
 .img-link img {
-  width: 40%;
-}
+  width: 50%;
+} */
+
+/* resource: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 
 /*headings*/
 h1, h2 {
