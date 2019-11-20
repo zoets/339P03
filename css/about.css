@@ -3,8 +3,8 @@
 img {
   float: right;
   margin: 0;
-  padding: 0;
-  width: 30%;
+  padding-top: 2em;
+  width: 40%;
 }
 
 .flex {
@@ -12,44 +12,91 @@ img {
 }
 
 .gif {
-  padding-left: 7em;
-  padding-top: 0;
-  margin-top: 0;
-
-  margin-bottom: 5em;
-}
-
-@media query screen (min-width: 20em){
-
-  .gif {
-    display: none;
-  }
-
+display: none;
 }
 
 .about h2, ul, p {
   display: block;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 p {
-  padding-left: 3em;
+  padding-left: 1.5em;
+  padding-right: .5em;
+  width: 45%;
+}
+
+ul {
+  margin-top: 0;
 }
 
 li {
   list-style: none;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
-p {
-  width: 40%;
-}
-
-/* using this to add padding to my h2 without adding padding to the image*/
+/* using this class to add padding to my h2 without adding padding to the image*/
 .padding {
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 h2 {
   margin-top: 0;
+}
+
+@media screen and (min-width: 30em){
+  img {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+}
+
+
+/*make the gif visible at medium screen sizes */
+@media screen and (min-width: 50em){
+  .gif {
+    padding-left: 7em;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 5em;
+    display: block;
+  }
+
+}
+
+/*large screen sizes */
+@media screen and (min-width: 70em){
+  img {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+  }
+
+  p {
+    width: 40%;
+  }
+
+  .about h2, ul, p {
+    display: block;
+    padding-left: 2em;
+  }
+
+  p {
+    padding-left: 3em;
+      width: 40%;
+  }
+
+  li {
+    list-style: none;
+    padding-left: 2em;
+  }
+
+  .padding {
+    padding-top: 4em;
+  }
+
+
 }
