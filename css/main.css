@@ -6,10 +6,31 @@ body {
 
 .title {
   padding: 0 0 0 1em;
+  display: flex;
 }
 
 .title a {
   text-decoration: none;
+}
+
+.animate {
+  width: 5em;
+  height: 5em;
+  animation: slide 60s ease infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0,0);
+  }
+
+  50% {
+    transform: translate(100vw,0);
+  }
+
+  100% {
+    transform: translate(0,0);
+  }
 }
 
 /* ----------------------------- FOOTER -----------------------------*/

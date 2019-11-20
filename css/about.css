@@ -2,9 +2,29 @@
 
 img {
   float: right;
-  padding-right: 5em;
-  padding-bottom: 2em;
-  width: 25.6%;
+  margin: 0;
+  padding: 0;
+  width: 30%;
+}
+
+.flex {
+  display: flex;
+}
+
+.gif {
+  padding-left: 7em;
+  padding-top: 0;
+  margin-top: 0;
+
+  margin-bottom: 5em;
+}
+
+@media query screen (min-width: 20em){
+
+  .gif {
+    display: none;
+  }
+
 }
 
 .about h2, ul, p {
@@ -21,14 +41,15 @@ li {
   padding-left: 2em;
 }
 
-.about {
-  padding: 0 1em 1em 1em;
+p {
+  width: 40%;
 }
 
-p {
-  width: 50%;
+/* using this to add padding to my h2 without adding padding to the image*/
+.padding {
+  padding-top: 4em;
 }
 
 h2 {
-  margin-top: 2em;
+  margin-top: 0;
 }

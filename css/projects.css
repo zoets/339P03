@@ -17,14 +17,16 @@
 }
 
 /* PROJECT DETAIL STYLING */
-.description p {
+p {
+  font-size: 1.2em;
   margin: 1em 2em 1em 2em;
-  width: 90%;
+  width: 80%;
 }
 
 .first {
+  margin: 3em 2em 1em 2em;
   margin-top: 3em;
-  padding-top: 2em;
+  width: 90%;
 }
 
 .last {
@@ -33,6 +35,44 @@
 }
 
 .proj-img {
-  width: 50%;
+  width: 80%;
   padding: 1em 0 1em 2em;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/*large screen sizes*/
+@media screen and (min-width: 70em){
+  .flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .proj-img {
+    width: 60%;
+  }
+
+   p {
+    width: 80%;
+  }
+}
+
+/*medium screen size*/
+@media screen and (min-width: 50em){
+  .flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .proj-img {
+    width: 50%;
+  }
+
+  p {
+    width: 70%;
+  }
 }

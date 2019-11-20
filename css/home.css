@@ -2,14 +2,32 @@
 
 .home img {
   float: left;
-  margin: 2em 0 2em 2em;
+  margin: 0;
   clear: both;
-  width: 25.65%;
+  width: 30%;
+  padding-right: 7em;
 }
 
 
 .home h2 {
   display: inline-block;
-  margin: 2em;
+
   font-size: 3em;
+}
+
+.top{
+  border-top: solid 8px #cfc6c9;
+}
+
+.bottom {
+  border-bottom: solid 8px #cfc6c9;
+}
+
+.home code {
+  display: flex;
+  width: 40%;
+  background-color: black;
+  color: white;
+  border-left: solid 8px #cfc6c9;
+  border-right: solid 8px #cfc6c9;
 }
