@@ -2,14 +2,52 @@
 
 .home img {
   float: left;
-  margin: 2em 0 2em 2em;
   clear: both;
-  width: 25.65%;
+  width: 55%;
 }
 
 
 .home h2 {
   display: inline-block;
-  margin: 2em;
-  font-size: 3em;
+  font-size: 1.5em;
+  margin: .7em;
+  margin-left: 1em;
+}
+
+.top{
+  border-top: solid 8px #cfc6c9;
+}
+
+.bottom {
+  border-bottom: solid 8px #cfc6c9;
+}
+
+.home code {
+  display: flex;
+  width: 33%;
+  padding: .5em;
+  background-color: black;
+  color: white;
+  border-left: solid 8px #cfc6c9;
+  border-right: solid 8px #cfc6c9;
+}
+
+/*larger than mobile screen sizes */
+@media screen and (min-width: 30em){
+  .home img {
+    float: left;
+    margin: 0;
+    clear: both;
+    width: 30%;
+    padding-right: 7em;
+  }
+
+  .home h2 {
+    font-size: 3em;
+  }
+
+  .home code {
+    width: 40%;
+  }
+
 }
