@@ -1,11 +1,16 @@
 body {
   overflow: auto;
+  width: 100%;
+}
+
+html {
+  width: 100%;
 }
 
 /* ----------------------------- HEADER -----------------------------*/
 
 .title {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 2em;
   display: flex;
 }
 
@@ -19,13 +24,14 @@ body {
   animation: slide 60s ease infinite;
 }
 
+/*animation for the little space invader in the header bar */
 @keyframes slide {
   0% {
     transform: translate(0,0);
   }
 
   50% {
-    transform: translate(100vw,0);
+    transform: translate(80vw,0);
   }
 
   100% {
@@ -37,14 +43,24 @@ body {
 
 footer {
   background-color: #45ADA8; /* Light Blue*/
-  height: 5em;
+  height: auto;
+  padding: 1em;
   display: flex;
   align-items: center;
   clear: both;
+  padding-left: 2em;
+  margin-top: 1em;
 }
 
 .footer-link {
   margin: 0 .5em 0 .5em;
+}
+
+/* code Gary showed me to make the footer stick to the bottom of the page*/
+.footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 /*------------------------ DEFAULT STYLING FOR PAGE --------------------------*/
@@ -333,11 +349,10 @@ h1, h2 {
 
 /*main navigation*/
 .navigation {
-  padding: 0.5em;
   background-color: #45ADA8; /* Light Blue*/
   list-style-type: none;
   overflow: hidden;
-  padding: 0;
+  padding: 0 0 0 2em;
   margin: 0;
 }
 
@@ -360,3 +375,8 @@ h1, h2 {
 }
 
 /*reference: https://www.w3schools.com/css/css_navbar.asp */
+
+/* --------------------- CITATIONS ----------------------*/
+#citations {
+  padding-bottom: 10em;
+}

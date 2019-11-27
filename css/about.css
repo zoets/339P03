@@ -26,11 +26,11 @@ p {
   width: 45%;
 }
 
-ul {
+.about ul {
   margin-top: 0;
 }
 
-li {
+.about li {
   list-style: none;
   padding-left: 1em;
 }
@@ -71,8 +71,8 @@ h2 {
   img {
     float: right;
     margin: 0;
-    padding: 0;
-    width: 40%;
+    padding: 1em 2em 0 0;
+    width: 35%;
   }
 
   p {
@@ -89,7 +89,7 @@ h2 {
       width: 40%;
   }
 
-  li {
+  .about li {
     list-style: none;
     padding-left: 2em;
   }
